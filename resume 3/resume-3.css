@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7em;
+}
+.container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: 
+    "hd hd"
+    "sc mc"
+    "sc mc";
+}
+
+header {
+    grid-area: hd;
+    background-color: #283241;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+header > * {
+    margin: 12px;
+}
+header > img {
+    border-radius: 100%;
+    width: 5%;
+    min-width: 100px;
+}
+
+aside {
+    background-color: #313e50;
+    color: #eee;
+    padding: 25px;
+    line-height: 2.5em;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2em;
+    margin: 0.5em 0 0.5em 0;
+}
+
+.chips > * {
+    font-size: small;
+    padding: 6px;
+    background-color: #549ad7;
+    border-radius: 20px;
+    line-height: initial
+}
+
+.content {
+    margin: 0.75em;
+}
+.content h2 {
+    color: #313e50;
+    margin: 1em 0 1em 0;
+}
+.content hr {
+    border-color: #549ad7;
+    margin: 0.75em 0 0.75em 0;
+}
+.ital {
+    font-style: italic;
+    color: gray;
+}
+
+@media (max-width: 678px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    header > img {
+        min-width: 200px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "hd"
+        "sc"
+        "mc";
+    }
+}

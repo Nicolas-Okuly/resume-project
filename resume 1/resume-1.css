@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 1s ease-in;
+}
+
+.paper {
+    margin: 20px auto;
+    padding: 0.25in;
+    height: 11in;
+    width: 8.5in;
+    background-color: #fff;
+    box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.15), 
+    10px -10px 15px rgba(0, 0, 0, 0.15);
+}
+
+ul {
+    margin-left: 0.25in;
+    line-height: 1.5em;
+}
+hr {
+    margin: 0.50em 0 1em 0;
+}
+
+section {
+    margin: 0.5em 0 2em 0;
+}
+
+.header {
+    text-align: center;
+    margin: 0.25in;
+}
+.header > * {
+    margin: 0.05in;
+    margin-bottom: 0.25in;
+}
+
+.exp-exp {
+    display: block;
+    margin: 1em 0 1em 0;
+}
+
+.skills {
+    line-height: 1.25em;
+}
